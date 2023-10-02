@@ -74,7 +74,7 @@ const loginUser = asyncHandler(async(req, res) => {
 // @access  Private
 const getMe = asyncHandler(async(req, res) => {
   const user = {
-    id: req.user._id,
+    id: req.user._id, 
     emai: req.user.email,
     name: req.user.name
   }
